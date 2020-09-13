@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/themes/vintage.js"></script>
+
+</head>
+<body>
+    <div id="2" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_2 = echarts.init(
+            document.getElementById('2'), 'vintage', {renderer: 'canvas'});
+        var option_2 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "line",
+            "name": "\u7528\u6237\u6570",
+            "connectNulls": false,
+            "symbol": "emptyCircle",
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "step": false,
+            "data": [
+                [
+                    "2018-11",
+                    23
+                ],
+                [
+                    "2018-12",
+                    55
+                ],
+                [
+                    "2019-01",
+                    70
+                ],
+                [
+                    "2019-02",
+                    69
+                ],
+                [
+                    "2019-04",
+                    113
+                ],
+                [
+                    "2019-05",
+                    155
+                ],
+                [
+                    "2019-06",
+                    194
+                ],
+                [
+                    "2019-07",
+                    231
+                ],
+                [
+                    "2019-08",
+                    295
+                ],
+                [
+                    "2019-09",
+                    362
+                ],
+                [
+                    "2019-10",
+                    402
+                ],
+                [
+                    "2019-11",
+                    632
+                ],
+                [
+                    "2019-12",
+                    709
+                ],
+                [
+                    "2020-01",
+                    820
+                ],
+                [
+                    "2020-02",
+                    1082
+                ],
+                [
+                    "2020-03",
+                    1272
+                ],
+                [
+                    "2020-04",
+                    1483
+                ],
+                [
+                    "2020-05",
+                    1649
+                ],
+                [
+                    "2020-06",
+                    1894
+                ],
+                [
+                    "2020-07",
+                    1929
+                ],
+                [
+                    "2020-08",
+                    1940
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 1,
+                "color": "#bcf580"
+            },
+            "zlevel": 0,
+            "z": 0
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u7528\u6237\u6570"
+            ],
+            "selected": {
+                "\u7528\u6237\u6570": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "xAxis": [
+        {
+            "type": "category",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "boundaryGap": false,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": null
+        }
+    ],
+    "yAxis": [
+        {
+            "type": "value",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "axisTick": {
+                "show": true,
+                "alignWithLabel": false,
+                "inside": false
+            },
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "\u7528\u6237\u8d70\u52bf",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_2.setOption(option_2);
+    </script>
+</body>
+</html>

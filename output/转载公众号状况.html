@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/themes/vintage.js"></script>
+
+</head>
+<body>
+    <div id="11" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_11 = echarts.init(
+            document.getElementById('11'), 'vintage', {renderer: 'canvas'});
+        var option_11 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "bar",
+            "name": "\u8f6c\u8f7d\u6570",
+            "data": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                2,
+                2,
+                3,
+                3,
+                3,
+                3,
+                3,
+                4,
+                6
+            ],
+            "barCategoryGap": "20%",
+            "label": {
+                "show": true,
+                "position": "right",
+                "margin": 8
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u8f6c\u8f7d\u6570"
+            ],
+            "selected": {
+                "\u8f6c\u8f7d\u6570": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "BNUZ\u4fe1\u9662\u5b66\u751f\u4f1a",
+                "\u7a0b\u5e8f\u5458\u5927\u5496",
+                "\u7275\u5f15\u5c0f\u54e5\u8bb2Python",
+                "\u6570\u636e\u7ba1\u9053",
+                "\u604b\u4e60Python",
+                "\u83dc\u9e1f\u5b66Python",
+                "\u5929\u4f5c\u4e4b\u7a0b",
+                "\u5b81\u5fb7\u5e08\u9662\u5927\u6570\u636e",
+                "Severus\u7684\u4fe1\u4ef0",
+                "Python\u7f16\u7a0b\u65f6\u5149",
+                "Python\u524d\u7ebf",
+                "Crossin\u7684\u7f16\u7a0b\u6559\u5ba4",
+                "TalkingData\u6570\u636e\u5b66\u5802",
+                "\u6570\u636e\u4e0d\u5439\u725b",
+                "\u7b80\u8bf4Python",
+                "Python\u89c6\u754c",
+                "\u6570\u636e\u68ee\u9e9f",
+                "Python\u7eff\u8272\u901a\u9053",
+                "\u7f16\u7a0b\u5b66\u4e60\u8005\u793e\u533a",
+                "\u88f8\u7761\u7684\u732a",
+                "\u51f9\u51f8\u6570\u636e",
+                "\u7a0b\u5e8f\u5458\u4e13\u680f"
+            ]
+        }
+    ],
+    "title": [
+        {
+            "text": "\u8f6c\u8f7d\u516c\u4f17\u53f7\u72b6\u51b5",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_11.setOption(option_11);
+    </script>
+</body>
+</html>
